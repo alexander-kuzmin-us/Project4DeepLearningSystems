@@ -30,10 +30,3 @@ jupyter nbconvert --to notebook --execute --inplace deep_learning.ipynb --Execut
 Run `deactivate` to leave the environment when you're done.
 
 The notebook downloads EuroSAT (~90 MB) on first run. On an Apple M4 (MPS backend) the full run takes about 35 minutes; it also runs on CUDA or CPU (much slower).
-
-## Other files
-
-- `build_notebook.py`: source of the notebook (regenerates an unexecuted `deep_learning.ipynb`).
-- `outputs/figures/`, `outputs/metrics/`: figures and metric CSVs written by the notebook and used by the report.
-- `report/build_report.py`, `report/apa_docx.py`: write the report into the provided APA template (`report/module_summary.docx`); needs `python-docx`.
-- `IMPLEMENTATION_PLAN.md`: the plan and reasoning behind each design decision.
